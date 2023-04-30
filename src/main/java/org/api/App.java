@@ -1,13 +1,17 @@
 package org.api;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import org.requests.ArxivQuery;
+import org.requests.EnumOrAnd;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ArxivQuery aqQuery = new ArxivQuery();
+        aqQuery.setCategory("cs.PL", EnumOrAnd.EMPTY.toString());
+        String string_query = aqQuery.getQuery(aqQuery.getSearchQuery());
+        System.out.println(string_query);
     }
+
+
 }
