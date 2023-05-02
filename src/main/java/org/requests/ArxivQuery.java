@@ -72,8 +72,8 @@ public class ArxivQuery {
     private final static String URL = "http://export.arxiv.org/api/query";
     private final static String SORTBY = "&sortBy=lastUpdatedDate";
     private final static String SORTORDER = "&sortOrder=ascending";
-    private final static String start = "&start=" + 0;
-    private String max_results = "&max_results=" + 4181; // si adivinas por que este numero tienes un premio xD
+    public final static String start = "&start=" + 0;
+    private String max_results = "&max_results=" + 10;//4181; // si adivinas por que este numero tienes un premio xD
 
 }
 

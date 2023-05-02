@@ -9,7 +9,7 @@ import org.apache.abdera.model.Feed;
 import org.apache.abdera.parser.ParseException;
 import org.apache.abdera.parser.Parser;
 public class ArxivFeed {
-    public Feed getFeed(String uRL) {
+    public Feed requestFeed(String uRL) {
         Feed feed = null;
         try {
             Abdera abdera = new Abdera();
@@ -28,4 +28,6 @@ public class ArxivFeed {
 
         return feed;
     }
+
+
 }
